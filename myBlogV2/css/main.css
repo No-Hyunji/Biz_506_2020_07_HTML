@@ -112,6 +112,18 @@ marign, padding의 값 지정
     background-image: url("images/fall-1072821.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    /* 16진수 타입*/
+    background-color: #ffffff;
+    /*
+        10진수 타입으로 색상 표현
+        rgb()함수를 사용하여 각각 R, G, B값을
+        0~255범위에서 표현하면 된다.
+    */
+    background-color: rgb(0,255,0);
+    /*
+    R,G,B,A(Alpa)
+    background-color: rgba(23,54,3,0.2);
+    */
 }
 #blog_body:hover {
     background-image: url("images/road-4143370.jpg");
