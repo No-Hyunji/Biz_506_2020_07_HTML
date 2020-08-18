@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function(){
+            $("div").css("backgroundColor","blue")
+            $("div").text("korea")
+            $("div").css("height","30px")
+            $("div").css("margin","10px")
+
+            var sw = -1
+            $("div").click(function(){
+                if(sw > 0){
+                $(this).removeClass("div_blue") //  blue style class 삭제
+                $(this).addClass("div_red") // red style class 추가
+                } else {
+                    $(this).removeClass("divs_red") // red style class 삭제
+                    $(this).addClass("div_blue") // blue style class 추가
+                }
+                sw *=-1 // -1,1,-1 계속 반복
+            })
+
+        })
+    </script>
+    <style>
+        .divs{
+            background-color: red;
+            color:white;
+        }
+    
+        .divs{
+            background-color: blue;
+            color:white;
+        }
+        </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
